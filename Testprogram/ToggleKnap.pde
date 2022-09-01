@@ -11,6 +11,13 @@ class ToggleKnap extends Knap {
       counter=0;
     }
   }
+  void registrerKlikCirkel() {
+    if ( mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapR && mouseY<(knapY+knapR)) {
+
+      knapOn = !knapOn;
+      counter=0;
+    }
+  }
 
   void tegnKnap(int knapX, int knapY, int knapB, int knapH, String t) {
     if (knapOn==true) {
